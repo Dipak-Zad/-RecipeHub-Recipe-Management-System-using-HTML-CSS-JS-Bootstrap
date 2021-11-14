@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!--Bootstrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="main">
+    <!--header-->
+    <nav class="navbar">
+        <ul class="topnav" id="dropdownClick"><!--unordered list has a 'topnav'class & 'dropdownClick'id to interact with javascript-->
+            <li><img src="/assets/main-logo.jpg" alt="Recipe Hub" height="45px"></li><!--1st list item is 'logo'-->
+            <li><a href="/index.html">Home</a></li><!--2nd list item is 'home'-->
+            <li><a href="/menu.html">Menu</a></li><!--3rd list item is 'menu'-->
+            <li><a href="/about.html">About</a></li><!--4th list item is 'about'-->
+            <li><a href="/tags.html">Tags</a></li><!--5th list item is 'tags'-->
+            <li><a href="/contact.html">Contact</a></li><!--6th list item is 'contact'-->
+            <li class="topnav-right"><a class="reg" href="/join.html"><button type="button">Join</button></a></li><!--signup anchor text is at right of navbar-->
+            <!--<li class="topnav-right"><a href="E:\My Projects\signup.html">Sign Up</a></li><!--signin anchor text is at right of navbar-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <!--main-->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="/assets/recipes/recipe-31.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Peanut Butter Chicken Rice Bowl</h2>
+            <p>
+              Impress your nearest and dearest with this peanut butter chicken and sticky rice bowl. A quick and easy dinner for two, it could also work for Valentine's
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>10 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>20 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>2 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="/tag-healthy.html">healthy</a>
+              <a href="/tag-brunch.html">brunch</a>
+              <a href="/tag-food.html">food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                Cook the rice following pack instructions. Meanwhile, stir the vinegar, sugar and 100ml of water together until the sugar dissolves. Add the cucumber ribbons and set aside.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Heat the grill to medium. Mix the oil, soy, peanut butter and 100-150ml of boiling water to loosen. Divide the mixture into two, setting aside half for later. Rub the chicken with the other half, then grill for 15 mins or until cooked, turning halfway through. Thickly slice.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Divide the rice between two bowls, top with sliced chicken and some pickled cucumber. Spoon the remaining marinade over the rice and finish with the chilli and chopped peanuts.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">175g Thai sticky rice (or 350g pre-cooked)</p>
+              <p class="single-ingredient">100ml rice vinegar</p>
+              <p class="single-ingredient">1 tbsp caster sugar</p>
+              <p class="single-ingredient">½ cucumber , peeled into ribbons</p>
+              <p class="single-ingredient">2 tbsp sesame oil</p>
+              <p class="single-ingredient">1 tbsp soy sauce</p>
+              <p class="single-ingredient">4 tbsp smooth peanut butter (we used a standard home brand supermarket jar)</p>
+              <p class="single-ingredient">2 boneless and skinless chicken thighs</p>
+              <p class="single-ingredient">1 small red chilli , finely sliced</p>
+              <p class="single-ingredient">2 tbsp chopped peanuts</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Hand Blender</p>
+              <p class="single-tool">Large Heavy Pot With Lid</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!--main-->
+    </div>
+    <!--footer-->
+    <footer class="page-footer">
+        <p>Copyright
+          &copy; <span id="date"></span>
+          <span class="footer-logo">Recipe Hub</span> Built by
+          <a href="https://github.com/Dipak-Zad">Dipak Zad</a>
+        </p>
+      </footer>
+    <!--footer-->
+</body>
+<script>
+    function dropdownMenu(){/*this is function in javascript, function's name 'dropdownMenu'*/
+			var x = document.getElementById("dropdownClick");/*var x assigned id 'dropdownClick' & document is used get our html file*/
+			if(x.className === "topnav"){/*if condition is to check whether the id which x is holding has class with name 'topnav'*/
+		    	x.className += " responsive"/*if yes then it should be appended with responsive i.e. topnav.responsive*/
+			}
+			else{
+				x.className = "topnav"		/*else classname should be assigned 'topnav'*/
+			}		/*in this function we are checking whether screen is in mobile view,if yes then we are appending 'topnav' class to*/
+		}		/*make another special class 'topnav.responsive' through which we can style our dropdownlist*/
+</script>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!--Bootstrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="main">
+    <!--header-->
+    <nav class="navbar">
+        <ul class="topnav" id="dropdownClick"><!--unordered list has a 'topnav'class & 'dropdownClick'id to interact with javascript-->
+            <li><img src="/assets/main-logo.jpg" alt="Recipe Hub" height="45px"></li><!--1st list item is 'logo'-->
+            <li><a href="/index.html">Home</a></li><!--2nd list item is 'home'-->
+            <li><a href="/menu.html">Menu</a></li><!--3rd list item is 'menu'-->
+            <li><a href="/about.html">About</a></li><!--4th list item is 'about'-->
+            <li><a href="/tags.html">Tags</a></li><!--5th list item is 'tags'-->
+            <li><a href="/contact.html">Contact</a></li><!--6th list item is 'contact'-->
+            <li class="topnav-right"><a class="reg" href="/join.html"><button type="button">Join</button></a></li><!--signup anchor text is at right of navbar-->
+            <!--<li class="topnav-right"><a href="E:\My Projects\signup.html">Sign Up</a></li><!--signin anchor text is at right of navbar-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <!--main-->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="/assets/recipes/recipe-27.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Giant Yorkshire Pudding</h2>
+            <p>
+              Try this twist on a Sunday roast, with steak, potatoes, veg and gravy served in a giant Yorkshire pudding. Prep ahead and make Sunday lunch in no time
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>15 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>50 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>2 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="/tag-healthy.html">healthy</a>
+              <a href="/tag-brunch.html">brunch</a>
+              <a href="/tag-food.html">food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                To make the batter, crack the eggs into a bowl or jug, then add the flour – it should make roughly the same quantity as the eggs. Whisk together until smooth. Gradually add the milk and carry on whisking until the mixture is lump-free. Season. Pour the batter into a jug, cover and chill for at least 30 mins and up to 24 hrs.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Heat a dry frying pan. Brush the steak with oil and season it well, place in the pan and brown on each side, then remove from the pan and leave to cool completely. If you’re making ahead, wrap and chill until you need it, up to 24 hrs. Peel the potato and cut it into quarters, put them in a pan, cover with water and then bring to the boil. Once they’ve come to the boil, cook for 2 mins, then drain. Leave to dry completely and chill until needed.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                When you're ready to serve your Sunday lunch, heat oven to 230C/210C fan/gas 8. Drizzle a little oil into a 20cm frying pan with an ovenproof handle and put it in the oven. Heat a little oil in a small roasting tin on the same shelf. Tip the potatoes into the roasting tin, turn them over in the oil, add the carrots and the steak. Put the tin back in the oven. Pour the batter into the frying pan and put it back in the oven and cook for 25 mins.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 4</p>
+                <div></div>
+              </header>
+              <p>
+                Check the Yorkshire pudding. It should have a good dark brown colour at the edges and feel firm and dry. If it’s ready, take it out and set aside. Remove the steak from the tin and rest until you’re ready to serve, wrapped loosely in foil to keep warm. Turn the potatoes and carrots and add the broccoli to the tin. Cook for a further 10 mins and if they look done, remove the veg, but put the potatoes back in the oven. Heat the gravy.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 5</p>
+                <div></div>
+              </header>
+              <p>
+                Turn off the oven and put the Yorkshire back in to warm through. Slice the steak and tip any juices into the gravy. Serve the Yorkshire on a plate, filled with the meat, veg and potatoes and pour over the gravy.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">For the Yorkshire pudding 2 large eggs (these should make 100ml in a jug)</p>
+              <p class="single-ingredient">70g plain flour</p>
+              <p class="single-ingredient">100ml whole milk</p>
+              <p class="single-ingredient">rapeseed or sunflower oil, for the tin</p>
+              <p class="single-ingredient">For the roast 1 fat steak (rather than a long, thin one)</p>
+              <p class="single-ingredient">rapeseed oil, for frying</p>
+              <p class="single-ingredient">1 large potato</p>
+              <p class="single-ingredient">2 carrots, peeled and cut into batons, or 8-10 baby carrots</p>
+              <p class="single-ingredient">4 stems Tenderstem broccoli</p>
+              <p class="single-ingredient">200-300ml gravy</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Hand Blender</p>
+              <p class="single-tool">Large Heavy Pot With Lid</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!--main-->
+    </div>
+    <!--footer-->
+    <footer class="page-footer">
+        <p>Copyright
+          &copy; <span id="date"></span>
+          <span class="footer-logo">Recipe Hub</span> Built by
+          <a href="https://github.com/Dipak-Zad">Dipak Zad</a>
+        </p>
+      </footer>
+    <!--footer-->
+</body>
+<script>
+    function dropdownMenu(){/*this is function in javascript, function's name 'dropdownMenu'*/
+			var x = document.getElementById("dropdownClick");/*var x assigned id 'dropdownClick' & document is used get our html file*/
+			if(x.className === "topnav"){/*if condition is to check whether the id which x is holding has class with name 'topnav'*/
+		    	x.className += " responsive"/*if yes then it should be appended with responsive i.e. topnav.responsive*/
+			}
+			else{
+				x.className = "topnav"		/*else classname should be assigned 'topnav'*/
+			}		/*in this function we are checking whether screen is in mobile view,if yes then we are appending 'topnav' class to*/
+		}		/*make another special class 'topnav.responsive' through which we can style our dropdownlist*/
+</script>
+</html>

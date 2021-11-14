@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!--Bootstrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="tags.css">
+
+    <!--owl carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"> 
+</head>
+<body>
+    <div class="main">
+    <!--header-->
+    <nav class="navbar">
+        <ul class="topnav" id="dropdownClick"><!--unordered list has a 'topnav'class & 'dropdownClick'id to interact with javascript-->
+            <li><img src="./assets/main-logo.jpg" alt="Recipe Hub" height="45px"></li><!--1st list item is 'logo'-->
+            <li><a href="./index.html">Home</a></li><!--2nd list item is 'home'-->
+            <li><a href="./menu.html">Menu</a></li><!--3rd list item is 'menu'-->
+            <li><a href="./about.html">About</a></li><!--4th list item is 'about'-->
+            <li><a href="./tags.html">Tags</a></li><!--5th list item is 'tags'-->
+            <li><a href="./contact.html">Contact</a></li><!--6th list item is 'contact'-->
+            <li class="topnav-right"><a class="reg" href="./join.html"><button type="button">Join</button></a></li><!--signup anchor text is at right of navbar-->
+            <!--<li class="topnav-right"><a href="E:\My Projects\signup.html">Sign Up</a></li><!--signin anchor text is at right of navbar-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <!--main-->
+        <!--tags-->
+        <main class="page">
+          <section class="tags-wrapper">
+            <!-- single tag -->
+                <a href="tag-tasty.html" class="tag">
+                  <h5>tasty</h5>
+                  <p>21 recipes</p>
+                </a>
+            <!-- end of single tag -->
+            <!-- single tag -->
+                <a href="tag-breakfast.html" class="tag">
+                  <h5>breakfast</h5>
+                  <p>11 recipes</p>
+                </a>
+            <!-- end of single tag -->
+            <!-- single tag -->
+                <a href="tag-snacks.html" class="tag">
+                  <h5>snacks</h5>
+                  <p>6 recipes</p>
+                </a>
+            <!-- end of single tag -->
+            <!-- single tag -->
+                <a href="tag-healthy.html" class="tag">
+                  <h5>healthy</h5>
+                  <p>17 recipes</p>
+                </a>
+            <!-- end of single tag -->
+            <!-- single tag -->
+                <a href="tag-food.html" class="tag">
+                  <h5>food</h5>
+                  <p>33 recipes</p>
+                </a>
+            <!-- end of single tag -->
+            <!-- single tag -->
+                <a href="tag-brunch.html" class="tag">
+                  <h5>brunch</h5>
+                  <p>20 recipes</p>
+                </a>
+            <!-- end of single tag -->
+          </section>
+        </main>
+        <!--tags-->
+    <!--main-->
+    </div>
+    <!--footer-->
+    <footer class="page-footer">
+        <p>Copyright
+          &copy; <span id="date"></span>
+          <span class="footer-logo">Recipe Hub</span> Built by
+          <a href="https://github.com/Dipak-Zad">Dipak Zad</a>
+        </p>
+      </footer>
+    <!--footer-->
+</body>
+<script>
+    function dropdownMenu(){/*this is function in javascript, function's name 'dropdownMenu'*/
+			var x = document.getElementById("dropdownClick");/*var x assigned id 'dropdownClick' & document is used get our html file*/
+			if(x.className === "topnav"){/*if condition is to check whether the id which x is holding has class with name 'topnav'*/
+		    	x.className += " responsive"/*if yes then it should be appended with responsive i.e. topnav.responsive*/
+			}
+			else{
+				x.className = "topnav"		/*else classname should be assigned 'topnav'*/
+			}		/*in this function we are checking whether screen is in mobile view,if yes then we are appending 'topnav' class to*/
+		}		/*make another special class 'topnav.responsive' through which we can style our dropdownlist*/
+</script>
+</html>

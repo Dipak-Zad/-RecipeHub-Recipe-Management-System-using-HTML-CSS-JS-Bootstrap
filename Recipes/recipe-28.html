@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!--Bootstrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="main">
+    <!--header-->
+    <nav class="navbar">
+        <ul class="topnav" id="dropdownClick"><!--unordered list has a 'topnav'class & 'dropdownClick'id to interact with javascript-->
+            <li><img src="/assets/main-logo.jpg" alt="Recipe Hub" height="45px"></li><!--1st list item is 'logo'-->
+            <li><a href="/index.html">Home</a></li><!--2nd list item is 'home'-->
+            <li><a href="/menu.html">Menu</a></li><!--3rd list item is 'menu'-->
+            <li><a href="/about.html">About</a></li><!--4th list item is 'about'-->
+            <li><a href="/tags.html">Tags</a></li><!--5th list item is 'tags'-->
+            <li><a href="/contact.html">Contact</a></li><!--6th list item is 'contact'-->
+            <li class="topnav-right"><a class="reg" href="/join.html"><button type="button">Join</button></a></li><!--signup anchor text is at right of navbar-->
+            <!--<li class="topnav-right"><a href="E:\My Projects\signup.html">Sign Up</a></li><!--signin anchor text is at right of navbar-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <!--header-->
+    <!--main-->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="/assets/recipes/recipe-28.jpg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Hidden Veg Ragu</h2>
+            <p>
+              Have a veg dodger in the family? This 'hidden' veg ragu packs in celery, carrots and tomatoes with pork and beef mince to make a flavour-packed family meal
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>10 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>1hr 20 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>6 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="/tag-healthy.html">healthy</a>
+              <a href="/tag-brunch.html">brunch</a>
+              <a href="/tag-food.html">food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                Tip the garlic cloves into a food processor with the onions, celery and carrots. Blitz until finely chopped. Heat 2 tbsp oil in a frying pan over a medium heat, and fry the veg mix until soft and translucent, about 20 mins.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                Meanwhile, heat the remaining oil in a second pan and fry all the mince until starting to brown, about 15-20 mins. Stir the vinegar into the mince, then season and stir into the fried vegetable mix.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Tip in the tomatoes, passata, tomato purée and stock. Reduce the heat to medium-low, cover and cook for 1 hr. After 30 mins (or once the oil separates), remove the lid so the ragu reduces and thickens. To freeze, leave to cool completely, then pack into freezerproof containers. Will keep frozen for up to three months. Serve over cooked short pasta.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">4 garlic cloves</p>
+              <p class="single-ingredient">1 red onion, roughly chopped</p>
+              <p class="single-ingredient">1 white onion, roughly chopped</p>
+              <p class="single-ingredient">2 celery sticks, roughly chopped</p>
+              <p class="single-ingredient">2 small carrots, roughly chopped</p>
+              <p class="single-ingredient">2½ tbsp olive oil</p>
+              <p class="single-ingredient">250g beef mince</p>
+              <p class="single-ingredient">250g pork mince</p>
+              <p class="single-ingredient">2 tbsp balsamic vinegar</p>
+              <p class="single-ingredient">400g can plum tomatoes</p>
+              <p class="single-ingredient">400g tomato pasata</p>
+              <p class="single-ingredient">2 tbsp tomato purée</p>
+              <p class="single-ingredient">400ml chicken or beef stock</p>
+              <p class="single-ingredient">cooked short pasta, to serve</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Hand Blender</p>
+              <p class="single-tool">Large Heavy Pot With Lid</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!--main-->
+    </div>
+    <!--footer-->
+    <footer class="page-footer">
+        <p>Copyright
+          &copy; <span id="date"></span>
+          <span class="footer-logo">Recipe Hub</span> Built by
+          <a href="https://github.com/Dipak-Zad">Dipak Zad</a>
+        </p>
+      </footer>
+    <!--footer-->
+</body>
+<script>
+    function dropdownMenu(){/*this is function in javascript, function's name 'dropdownMenu'*/
+			var x = document.getElementById("dropdownClick");/*var x assigned id 'dropdownClick' & document is used get our html file*/
+			if(x.className === "topnav"){/*if condition is to check whether the id which x is holding has class with name 'topnav'*/
+		    	x.className += " responsive"/*if yes then it should be appended with responsive i.e. topnav.responsive*/
+			}
+			else{
+				x.className = "topnav"		/*else classname should be assigned 'topnav'*/
+			}		/*in this function we are checking whether screen is in mobile view,if yes then we are appending 'topnav' class to*/
+		}		/*make another special class 'topnav.responsive' through which we can style our dropdownlist*/
+</script>
+</html>
